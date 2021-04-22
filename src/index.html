@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <meta
+      name="description"
+      content="Auf YouTube findest du die angesagtesten Videos und Tracks. Außerdem kannst du eigene Inhalte hochladen und mit Freunden oder gleich der ganzen Welt teilen."
+    />
+    <meta name="author" content="Dario Evers" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/favicon.ico" /> 
+  </head>
+  <body>
+    <div class="topnav">
+      <div class="topnav_left">
+        <button onclick="myFunction()" class="hamburger_button">    
+            <div class="x-menu">
+            <div class="line first"></div>
+            <div class="line sec"></div>
+            <div class="line thr"></div>
+          </div></i></button>
+        <a href="#"><img src="./images/yt_logo_rgb_dark.png" class="logo" /></a>
+      </div>
+      <div class="topnav_mid">
+        <input type="text" placeholder="Search" class="search" />
+        <button class="search_button"><i class="fas fa-search"></i></button>
+        <a href="#"><i class="fas fa-microphone"></i></a>
+      </div>
+      <div class="topnav_right">
+        <a href="#"><i class="fas fa-video"></i></a>
+        <a href="#"
+          ><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i
+          ><i class="fas fa-ellipsis-v"></i
+        ></a>
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="#"><i class="fas fa-user-circle"></i></a>
+      </div>
+    </div>
+    <main class="main_content">
+      <div class="sidenav" id="sidenav">
+        <div class="sidenav_obj"><i class="fas fa-home"></i> Home</div>
+        <div class="sidenav_obj"><i class="fas fa-fire"></i> Trending</div>
+        <div class="sidenav_obj"><i class="fab fa-youtube"></i> Subscriptions</div>
+        <hr />
+        <div class="sidenav_obj"><i class="fab fa-youtube"></i> Library</div>
+        <div class="sidenav_obj"><i class="fas fa-history"></i> History</div>
+        <div class="sidenav_obj"><i class="far fa-play-circle"></i> Your videos</div>
+        <div class="sidenav_obj"><i class="fas fa-clock"></i> Watch later</div>
+        <div class="sidenav_obj"><i class="fas fa-bookmark"></i> Favorites</div>
+        <div class="sidenav_obj"><i class="fas fa-chevron-down"></i> Show more</div>
+        <hr />
+        <h2>SUBSCRIPTIONS</h2>
+        <div class="subscription_links">
+        <a href="https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw" target="_blank"> <div class="sidenav_obj"><i class="fas fa-user-circle"></i> TechLead</div></a>
+        <a href="https://www.youtube.com/channel/UCWiY6fYdxuEe78r-0uFCnhA" target="_blank"><div class="sidenav_obj"><i class="fas fa-user-circle"></i>LongBeachGriffy</div></a>
+        <a href="https://www.youtube.com/channel/UCxDZs_ltFFvn0FDHT6kmoXA" target="_blank"><div class="sidenav_obj"><i class="fas fa-user-circle"></i>bald and bankrupt</div></a>
+        <a href="https://www.youtube.com/user/marquesbrownlee" target="_blank"><div class="sidenav_obj"><i class="fas fa-user-circle"></i>Marques Brownlee</div></a>
+        <a href="https://www.youtube.com/user/KirillIcey" target="_blank"><div class="sidenav_obj"><i class="fas fa-user-circle"></i>Benihana Boy</div></a>
+        <a href="https://www.youtube.com/user/homergfunk" target="_blank"><div class="sidenav_obj"><i class="fas fa-user-circle"></i>Chris Titus Tech</div></a>
+        <a href="#"><div class="sidenav_obj"><i class="fas fa-chevron-down"></i> Show 26 more</div></a>
+        </div>
+        <hr />
+        <h2>MORE ON YOUTUBE</h2>
+        <div class="sidenav_obj"><i class="fab fa-youtube"></i> YouTube Premium</div>
+        <div class="sidenav_obj"><i class="fas fa-ticket-alt"></i> Movies</div>
+        <div class="sidenav_obj"><i class="fas fa-gamepad"></i> Gaming</div>
+        <div class="sidenav_obj"><i class="fas fa-broadcast-tower"></i> Live</div>
+        <div class="sidenav_obj"><i class="fas fa-university"></i> Study content</div>
+        <div class="sidenav_obj"><i class="fas fa-futbol"></i> Sports</div>
+        <hr />
+        <div class="sidenav_obj"><i class="fas fa-sliders-h"></i> Settings</div>
+        <div class="sidenav_obj"><i class="fas fa-history"></i> Reporting history</div>
+        <div class="sidenav_obj"><i class="fas fa-life-ring"></i> Help</div>
+        <div class="sidenav_obj"><i class="fas fa-flag"></i> Send feedback</div>
+      </div>
+
+      <div class="small_sidenav" id="small_sidenav">
+        <div class="small_sidenav_button"><div class="sidenav_obj_icon"><i class="fas fa-home"></i></div> <div class="sidenav_obj_text"> Home</div></div>
+        <div class="small_sidenav_button"><div class="sidenav_obj_icon"><i class="fas fa-fire"></i> </div> <div class="sidenav_obj_text"> Trends</div></div>
+        <div class="small_sidenav_button"><div class="sidenav_obj_icon"><i class="fab fa-youtube"></i></div> <div class="sidenav_obj_text"> Subs</div></div>
+        <div class="small_sidenav_button"><div class="sidenav_obj_icon"><i class="fas fa-photo-video"></i></div> <div class="sidenav_obj_text"> Media</div></div>
+      </div>
+
+      <div class="youtube_profile" id="youtube_profile">
+        <div class="header_image">
+          <img src="./images/joynerlucas_header.png" class="header_paris" />
+        </div>
+        <div class="chanel_info">
+          <div class="chanel_info_top">
+              <div class="chanel_info_top_left">
+                  <div class="profile_pic"><img src="./images/avatar2.jpg" class="avatar">
+                </div>
+                </div>
+                <div class="chanel_info_top_mid">
+                    <h1>Joyner Lucas <i class="fab fa-itunes-note"></i></h1>
+                    <p>4.95M subscribers</p>
+                </div>
+                <div class="chanel_info_top_right">
+                    <button class="subscribe_button">SUBSCRIBE</button>
+                </div>
+          </div>
+          <div class="chanel_info_bot">
+            <a href="#" class="home">HOME</a>
+            <a href="#">VIDEOS</a>
+            <a href="#">PLAYLISTS</a>
+            <a href="#">COMMUNITY</a>
+            <a href="#">STORE</a>
+            <a href="#">CHANNELS</a>
+            <a href="#">ABOUT</a>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+        <div class="videos">
+            <div class="intro_video_area">
+                <div class="intro_video"><iframe width="480" height="270" src="https://www.youtube.com/embed/mGdDlQz9WEo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="intro_video_content"><h1>Joyner Lucas - Keep It 100 (508) 507-2209</h1>
+            <p>Available on Spotify and iTunes: https://atlantic.lnk.to/508-507-2209​ </p>
+            <p>Instagram: @joynerlucas </p>
+            <p>Merch (shop now): https://joynerlucas.com/collections/all</p></div>
+        </div>
+        <hr class="hr_intro">
+        <div class="videos">
+            <div class="videos_header">
+                <div class="videos_header_name"><h1>Trending Videos</h1></div>
+                <a href="https://www.youtube.com/watch?v=43gm3CJePn0&list=PUUebubwSuTHfHjWJI4gCS9A" target="_blank"><div class="videos_header_play"><i class="fas fa-play"></i> PLAY ALL</div></a>
+            </div>
+            <div class="video_section_albumOne">
+                <div class="videos_albumOne">
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_small"><img width="195" height="110" src="./images/snitch_cover.png"></div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_title">Jonyer Lucas - Snitch (Evolution)</div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_artist">Joyner Lucas <i class="fab fa-itunes-note"></i></div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_stats">
+                        <div class="video_description_views">17 mio clicks</div>
+                        <div class="video_description_views">6 months ago</div>
+                    </div></a>
+                </div>
+                <div class="videos_albumOne">
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_small"><img width="195" height="110" src="./images/bankaccount_cover.png"></div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_title">Jonyer Lucas - Bank Account (Remix)</div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_artist">Joyner Lucas <i class="fab fa-itunes-note"></i></div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_stats">
+                        <div class="video_description_views">76 mio clicks</div>
+                        <div class="video_description_views">3 years ago</div>
+                    </div></a>
+                </div>
+                <div class="videos_albumOne">
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_small"><img width="195" height="110" src="./images/imnotracist_cover.png"></div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_title">Jonyer Lucas - I'm Not Racist</div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_artist">Joyner Lucas <i class="fab fa-itunes-note"></i></div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_stats">
+                        <div class="video_description_views">144 mio clicks</div>
+                        <div class="video_description_views">3 years ago</div>
+                    </div></a>
+                </div>
+                <div class="videos_albumOne">
+                    <a href="https://www.youtube.com/watch?v=vpNUzNBw6FI" target="_blank"><div class="video_small"><img width="195" height="110" src="./images/adhd_cover.png"></div></a>
+                    <a href="https://www.youtube.com/watch?v=vpNUzNBw6FI" target="_blank"><div class="video_description_title">Joyner Lucas - ADHD with Revenge Intro</div></a>
+                    <a href="https://www.youtube.com/watch?v=vpNUzNBw6FI" target="_blank"><div class="video_description_artist">Joyner Lucas <i class="fab fa-itunes-note"></i></div></a>
+                    <a href="https://www.youtube.com/watch?v=vpNUzNBw6FI" target="_blank"><div class="video_description_stats">
+                        <div class="video_description_views">25 mio clicks</div>
+                        <div class="video_description_views">1 year ago</div>
+                    </div></a>
+                </div>
+                <div class="videos_albumOne">
+                    <a href="https://www.youtube.com/watch?v=KlJd_bI7DVo" target="_blank"><div class="video_small"><img width="195" height="110" src="./images/will_cover.png"></div></a>
+                    <a href="https://www.youtube.com/watch?v=KlJd_bI7DVo" target="_blank"><div class="video_description_title">Joyner Lucas - Will (ADHD)</div></a>
+                    <a href="https://www.youtube.com/watch?v=KlJd_bI7DVo" target="_blank"><div class="video_description_artist">Joyner Lucas <i class="fab fa-itunes-note"></i></div></a>
+                    <a href="https://www.youtube.com/watch?v=KlJd_bI7DVo" target="_blank"><div class="video_description_stats">
+                        <div class="video_description_views">41 mio clicks</div>
+                        <div class="video_description_views">1 year ago</div>
+                    </div></a>
+                </div>
+            </div>
+            <hr class="hr_intro">
+        <div class="videos">
+            <div class="videos_header">
+                <div class="videos_header_name"><h1>Evolution</h1></div>
+                <a href="https://www.youtube.com/watch?v=L7gruVgMCVQ&list=PL8FcXyvXIOl8W-k2TU5aPFiaYNEaUKaXO" target="_blank"><div class="videos_header_play"><i class="fas fa-play"></i> PLAY ALL</div></a>
+            </div>
+            <div class="video_section_albumOne">
+                <div class="videos_albumOne">
+                    <a href="https://www.youtube.com/watch?v=RCtMVgOFcqA" target="_blank"><div class="video_small"><img width="195" height="110" src="./images/likeariver_cover.png"></div></a>
+                    <a href="https://www.youtube.com/watch?v=RCtMVgOFcqA" target="_blank"><div class="video_description_title">Jonyer Lucas - Like A River ft. Elijah James</div></a>
+                    <a href="https://www.youtube.com/watch?v=RCtMVgOFcqA" target="_blank"><div class="video_description_artist">Joyner Lucas <i class="fab fa-itunes-note"></i></div></a>
+                    <a href="https://www.youtube.com/watch?v=RCtMVgOFcqA" target="_blank"><div class="video_description_stats">
+                        <div class="video_description_views">2 mio clicks</div>
+                        <div class="video_description_views">3 months ago</div>
+                    </div></a>
+                </div>
+                <div class="videos_albumOne">
+                    <a href="https://www.youtube.com/watch?v=L7gruVgMCVQ" target="_blank"><div class="video_small"><img width="195" height="110" src="./images/fallslowly_cover.png"></div></a>
+                    <a href="https://www.youtube.com/watch?v=L7gruVgMCVQ" target="_blank"><div class="video_description_title">Jonyer Lucas - Fall Slowly ft. Shanti</div></a>
+                    <a href="https://www.youtube.com/watch?v=L7gruVgMCVQ" target="_blank"><div class="video_description_artist">Joyner Lucas <i class="fab fa-itunes-note"></i></div></a>
+                    <a href="https://www.youtube.com/watch?v=L7gruVgMCVQ" target="_blank"><div class="video_description_stats">
+                        <div class="video_description_views">17 mio clicks</div>
+                        <div class="video_description_views">6 months ago</div>
+                    </div></a>
+                </div>
+                <div class="videos_albumOne">
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_small"><img width="195" height="110" src="./images/thingsiveseen_cover.png"></div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_title">Jonyer Lucas - Things I've seen</div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_artist">Joyner Lucas <i class="fab fa-itunes-note"></i></div></a>
+                    <a href="https://www.youtube.com/watch?v=43gm3CJePn0" target="_blank"><div class="video_description_stats">
+                        <div class="video_description_views">1 mio clicks</div>
+                        <div class="video_description_views">4 months ago</div>
+                    </div></a>
+                </div>
+                <div class="videos_albumOne">
+                    <a href="https://www.youtube.com/watch?v=pyYExCh8OLk" target="_blank"><div class="video_small"><img width="195" height="110" src="./images/zimzimma_cover.png"></div></a>
+                    <a href="https://www.youtube.com/watch?v=pyYExCh8OLk" target="_blank"><div class="video_description_title">Joyner Lucas - Zim Zimma (Evolution)</div></a>
+                    <a href="https://www.youtube.com/watch?v=pyYExCh8OLk" target="_blank"><div class="video_description_artist">Joyner Lucas <i class="fab fa-itunes-note"></i></div></a>
+                    <a href="https://www.youtube.com/watch?v=pyYExCh8OLk" target="_blank"><div class="video_description_stats">
+                        <div class="video_description_views">2 mio clicks</div>
+                        <div class="video_description_views">4 months ago</div>
+                    </div></a>
+                </div>
+                <div class="videos_albumOne">
+                    <a href="https://www.youtube.com/watch?v=UNcLAXjvh4A" target="_blank"><div class="video_small"><img width="195" height="110" src="./images/theproblem_cover.png"></div></a>
+                    <a href="https://www.youtube.com/watch?v=UNcLAXjvh4A" target="_blank"><div class="video_description_title">Joyner Lucas - The Problem</div></a>
+                    <a href="https://www.youtube.com/watch?v=UNcLAXjvh4A" target="_blank"><div class="video_description_artist">Joyner Lucas <i class="fab fa-itunes-note"></i></div></a>
+                    <a href="https://www.youtube.com/watch?v=UNcLAXjvh4A" target="_blank"><div class="video_description_stats">
+                        <div class="video_description_views">1 mio clicks</div>
+                        <div class="video_description_views">4 months ago</div>
+                    </div></a>
+                </div>
+            </div>
+            <hr class="hr_intro">
+            <div class="videos">
+                <div class="videos_header">
+                    <div class="videos_header_name"><h1>Featured</h1></div>
+                </div>
+
+        </div>
+        </div>
+    </main>
+
+<script>
+    function myFunction() {
+        if (document.getElementById('sidenav')) {
+
+         if (document.getElementById('sidenav').style.display == 'none') {
+            document.getElementById('sidenav').style.display = 'block';
+            document.getElementById('small_sidenav').style.display = 'none';
+            document.getElementById('youtube_profile').style.marginLeft = '230px';
+            // document.getElementById("myId").classList.add("mystyle"); multiple classes, categorize css
+            }
+            else {
+            document.getElementById('sidenav').style.display = 'none';
+            document.getElementById('small_sidenav').style.display = 'block';
+            document.getElementById('youtube_profile').style.marginLeft = '80px';
+        }
+    }
+}
+</script>
+  </body>
+</html>
